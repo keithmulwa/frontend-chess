@@ -19,7 +19,7 @@ const handleLogin = () => {
 
   axios({
     method: "POST",
-    url: "http://192.168.0.22:5000/user/login",
+    url: "https://flask-chess-applcation-1-hch6.onrender.com/user/login",
     data: { email, password },
   })
     .then((res) => {

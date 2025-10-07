@@ -21,7 +21,7 @@ const handleRegister = () => {
 
   axios({
     method: "POST",
-    url: "http://192.168.0.22:5000/user/add",
+    url: "https://flask-chess-applcation-1-hch6.onrender.com/user/add",
     data: { username, email, password },
   })
     .then((res) => {
