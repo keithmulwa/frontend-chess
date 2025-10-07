@@ -21,7 +21,7 @@ const handleRegister = () => {
 
   axios({
     method: "POST",
-    url: "http://127.0.0.1:5000/user/add",
+    url: "http://192.168.0.22:5000/user/add",
     data: { username, email, password },
   })
     .then((res) => {

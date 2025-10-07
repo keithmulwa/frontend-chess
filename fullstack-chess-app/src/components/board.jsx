@@ -54,7 +54,7 @@ useEffect(() => {
 
   axios({
     method: "POST",
-    url: "http://127.0.0.1:5000/game/create",
+    url: "http://192.168.0.22:5000/game/create",
     headers: {
       Authorization: `Bearer ${token}`
     },
@@ -161,7 +161,7 @@ const handleMovePiece = (targetCoords) => {
 
   axios({
     method: "POST",
-    url: `http://127.0.0.1:5000/move/${gameId}`,
+    url: `http://192.168.0.22:5000/move/${gameId}`,
     headers: {
     Authorization: `Bearer ${token}`
     },
@@ -211,7 +211,7 @@ if (aiTurnNext) {
   setTimeout(() => {
     axios({
       method: "POST",
-      url: `http://127.0.0.1:5000/move/${gameId}`,
+      url: `http://192.168.0.22:5000/move/${gameId}`,
       headers: {
         Authorization: `Bearer ${token}`
       },

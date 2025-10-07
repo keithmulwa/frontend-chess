@@ -19,7 +19,7 @@ const handleLogin = () => {
 
   axios({
     method: "POST",
-    url: "http://127.0.0.1:5000/user/login",
+    url: "http://192.168.0.22:5000/user/login",
     data: { email, password },
   })
     .then((res) => {
